@@ -102,7 +102,7 @@ Hi, I’m **Muhammad Talha**, a **Senior Flutter Developer** with **3+ years of 
 
 ---
 
-### 💡 Flutter Developer — Nextera Software Company, Peshawar
+### 💡 Flutter Developer — Nexum Technologies, Peshawar
 **Feb 2023 – Sep 2025**
 
 - Delivered cross-platform Flutter apps for **food delivery, education, utilities, and management systems**
