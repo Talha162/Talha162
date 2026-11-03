@@ -1,0 +1,32 @@
+
+name: Update GitHub Profile Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub statistics
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: images/userstats.svg
+          colors: dark-dimmed
+          custom-title: Muhammad Talha | GitHub Analytics
+          include-title: true
+          border-radius: 14
+          hide-keys: general
+          max-languages: 8
+          commit-and-push: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
